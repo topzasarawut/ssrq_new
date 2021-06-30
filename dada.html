@@ -1,0 +1,14 @@
+CREATE TABLE `chart` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `score` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `chart` (`id`, `title`, `score`) VALUES
+(1, 'A', 5000),
+(2, 'B', 3500),
+(3, 'C', 2000),
+(4, 'D', 4000);
+
+ALTER TABLE `chart`
+  ADD PRIMARY KEY (`id`);
